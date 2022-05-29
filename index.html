@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon-magic-ball.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Magic 8-Ball</title>
+  </head>
+  <body>
+    <header>
+      <h1>Magic 8-Ball</h1>
+      <figure>
+        <img src="./assets/img/magic-8ball.png" alt="magic-8-ball" width="50px" />
+      </figure>
+    </header>
+    <main>
+      <section class="description">
+        <p>
+          Focus on a Yes- No question that you really need the answer to and
+          click the Magic 8 Ball to see your fate.
+        </p>
+      </section>
+      <section id="mainSection">
+        <div class="input-box">
+          <label>
+            <input
+              class="text-area"
+              id="text-area"
+              type="text"
+              placeholder="Ask me something..."
+            />
+          </label>
+          <button class="button-reset" id="button-reset" type="button">
+            Play again
+          </button>
+        </div>
+        <figure id="toggle-off">
+          <img
+            class="image-front"
+            id="image-front"
+            src="./assets/img/magic-8-ball-front.png"
+            alt="front-ball"
+            width="300px"
+          />
+        </figure>
+      </section>
+      <section>
+        <div class="alert-modal-off" id="alert-modal">
+          <p class="alert-text">Oops, I cannot predict without a question.</p>
+          <img src="./assets/img/magic-8ball.png" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="magic-8-ball.js"></script>
+</html>

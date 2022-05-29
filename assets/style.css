@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ubuntu:wght@300&display=swap');
+
+body {
+    background: #8f57e9 url("./img/background.jpg") no-repeat right top fixed;
+    font-family: 'Megrim', cursive;
+}
+
+h1 {
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: default;
+    margin-left: 10px;
+    text-shadow: 0 0 10px rgb(246, 248, 255); 
+}
+
+header {
+    background-color: #5a309e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(49, 11, 87);
+    border-radius: 5px;
+}
+
+.description {
+    background-color: #8f57e9;
+    margin: 10px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(49, 11, 87);
+    border-style: outset;
+    border-color: #8f57e998;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+figure .image-front{
+    width: 300px;
+    margin: 0 10px;
+    position: relative;
+    margin-right: 25px;
+    filter: contrast(100%);
+    cursor: pointer;
+}
+
+.toggle-off {
+    display: none;
+}
+
+figure .image-back {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    display: default;
+    filter: contrast(120%);
+}
+
+.toggle-on figure .image-back{
+    display: default;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-reset,
+.text-area {
+    width: 250px;
+    max-height: 30px;
+    background-color: #8f57e9ad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(49, 11, 87);
+    color: #FFFFFF;
+    border: 2px inset #8f57e9;
+    font-family: 'Nova Cut', cursive;
+}
+
+.text-area:hover {
+    background-color: #ad84f0ad;
+    cursor: pointer;
+}
+
+.text-area:focus {
+    outline-color: #8f57e9ad;
+    cursor: text;
+}
+
+.text-area::placeholder {
+    color: #FFFFFF;
+    font-family: 'Nova Cut', cursive;
+}
+
+.button-reset {
+    width: 120px;
+    max-height: 40px;
+}
+
+.button-reset:hover {
+    cursor: pointer;
+}
+
+.button-reset:active {
+    cursor: pointer;
+    border: 2px outset transparent;
+    background-color: #7238cfad;
+    box-shadow: 0 0 10px rgb(82, 13, 151);
+    color: rgba(230, 230, 230, 0.568);
+}
+
+
+#result-box {
+    width: 300px;
+    height: 284.3px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    font-family: 'lato', sans-serif;
+    cursor: default;
+    text-decoration: wavy;
+    text-shadow: 0 2px 2px rgb(30, 52, 119);
+    z-index: 2;
+    top: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#result-box p {
+    margin: 0 auto;
+    visibility: visible;
+    width: 70px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.alert-modal-on {
+    width: 300px;
+    height: 150px;
+    bottom: 100px;
+    background-color: #7238cfec;
+    box-shadow: 0 0 10px rgb(186, 151, 221);
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nova Cut', cursive;
+}
+
+.alert-text {
+    color: white;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
+}
+
+.alert-modal-on img {
+    width: 90px;
+    padding-right: 10px;
+}
+
+.alert-modal-off {
+    display: none;
+}
+
+@media (min-width: 420px) {
+    .input-box {
+        flex-direction: row;
+    }
+
+    #result-box {
+        top: 34px;
+    }
+
+    #result-box p {
+        padding-top: 35px;
+    }
+    
+}
