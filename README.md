@@ -1,6 +1,6 @@
-# Magic-8 ball <!-- ![imagem!](https:example.jpg "Logo da magic-8 ball") -->
+# ![imagem!](https://i.ibb.co/3SmkV0M/magic-8ball-icon.png "Logo da magic-8 ball") Magic-8 ball 
 
-> ### Acesse a página do jogo clicando [aqui](https://exemplo.com/)
+> ### Acesse a página do jogo clicando [aqui](https://ingridyr.github.io/trabalho-2-bi-ricardo-uvv/)
 
 ### Nesse trabalho decidi replicar para a forma digital um jogo bem conhecido <em>-em formato físico-</em> que é a bola-mágica 8, onde o objetivo é "prever" uma resposta que auxilie o usuário a tomar uma decisão.
 
